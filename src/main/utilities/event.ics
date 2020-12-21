@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AddtoCalendar.com v1.5//EN
+BEGIN:VEVENT
+DTSTAMP:20201209T172635Z
+STATUS:CONFIRMED
+UID:1607534795addtocalendar
+DTSTART:20201215T100000Z
+DTEND:20201218T100000Z
+SUMMARY:Intercontinental New York Times Square via Priceline (Trip Number:343-708-743-45)
+DESCRIPTION:Intercontinental New York Times Square via Priceline (Trip Number:343-708-743-45)\n\nReservation at the Intercontinental New York Times Square hotel from Tue\, Dec 15\, 2020 - after 03:00 PM to Fri\, Dec 18\, 2020 - 12:00 PM\n--\nhttp://go.addtocalendar.com
+X-ALT-DESC;FMTTYPE=text/html:Intercontinental New York Times Square via Priceline (Trip Number:343-708-743-45)<br><br>Reservation at the Intercontinental New York Times Square hotel from Tue, Dec 15, 2020 - after 03:00 PM to Fri, Dec 18, 2020 - 12:00 PM<br>--<br>http://go.addtocalendar.com
+LOCATION:300 W 44th Street\, New York\, NY 10036
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+END:VALARM
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
