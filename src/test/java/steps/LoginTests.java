@@ -1,5 +1,6 @@
 package steps;
 
+import com.ui.seleniumdesign.test.BaseTest;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -12,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class LoginTests  {
+public class LoginTests extends BaseTest {
     public WebDriver driver;
     public By formAuth = By.linkText("Form Authentication");
     public By usernameField = By.id("username");

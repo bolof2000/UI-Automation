@@ -1,0 +1,9 @@
+Sample workflow.
+
+Launch the website
+Enter the given Keyword on the main Page
+Click on the N suggestion
+Enter the given keyword on the google results Page
+Click on the N suggestion once again
+Go to News/Videos/Images - Navigation Bar
+Print the search result stat
