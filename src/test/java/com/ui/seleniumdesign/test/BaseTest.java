@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import pages.HomePage;
 
 
@@ -31,10 +32,14 @@ public class BaseTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
+    @DataProvider
+    public static Object[][] getData(){
 
-
-
-
+        return new Object[][]{
+                {"bolof",3},
+                {"selenium",4}
+        };
+    }
 
         @After
         public void tearDown() throws InterruptedException {

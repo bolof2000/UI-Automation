@@ -1,4 +1,4 @@
-package com.ui.seleniumdesign.srp;
+package com.ui.seleniumdesign.srp.common;
 
 public abstract class AbstractComponent {
 

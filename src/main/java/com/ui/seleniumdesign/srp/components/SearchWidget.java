@@ -1,15 +1,14 @@
-package com.ui.seleniumdesign.srp;
+package com.ui.seleniumdesign.srp.components;
 
+import com.ui.seleniumdesign.srp.common.AbstractComponent;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class SearchWidget extends AbstractComponent{
+public class SearchWidget extends AbstractComponent {
 
     /*
     Find elements for the components

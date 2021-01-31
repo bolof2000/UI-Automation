@@ -1,13 +1,11 @@
 package com.ui.seleniumdesign.test.srp;
 
-import com.ui.seleniumdesign.srp.GoogleResultPage;
-import com.ui.seleniumdesign.srp.GoogleSearchPage;
+import com.ui.seleniumdesign.srp.pages.GoogleResultPage;
+import com.ui.seleniumdesign.srp.pages.GoogleSearchPage;
 import com.ui.seleniumdesign.test.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import javax.swing.*;
 
 public class GoogleTest extends BaseTest {
 
@@ -23,9 +21,18 @@ public class GoogleTest extends BaseTest {
         this.googleResultPage = new GoogleResultPage(driver);
     }
 
-    @Test
-    public void googleTestWorkFlow(){
+    @Test(dataProvider = "getData")
+    public void googleTestWorkFlow(String keyword,int index){
         goToUrl("https://www.google.com");
         Assert.assertTrue(googleSearchPage.getSearchWidget().isDisplayed());
+        googleSearchPage.getSearchWidget().enterWordToSearch(keyword);
+        googleSearchPage.getSearchSuggestion().clickSuggestionByIndex(index);
+        Assert.assertTrue(googleResultPage.getNavigationBar().isDisplayed());
+
+
+        googleResultPage.getSearchWidget().enterWordToSearch(keyword);
+        googleResultPage.getSearchSuggestion().clickSuggestionByIndex(index);
+        googleResultPage.getNavigationBar().goToNews();
+       System.out.println(googleResultPage.getResultStat().getStat());
     }
 }

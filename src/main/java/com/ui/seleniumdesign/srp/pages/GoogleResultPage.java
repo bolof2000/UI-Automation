@@ -1,6 +1,9 @@
-package com.ui.seleniumdesign.srp;
+package com.ui.seleniumdesign.srp.pages;
 
-import org.apache.http.NameValuePair;
+import com.ui.seleniumdesign.srp.components.NavigationBar;
+import com.ui.seleniumdesign.srp.components.ResultStat;
+import com.ui.seleniumdesign.srp.components.SearchSuggestion;
+import com.ui.seleniumdesign.srp.components.SearchWidget;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 

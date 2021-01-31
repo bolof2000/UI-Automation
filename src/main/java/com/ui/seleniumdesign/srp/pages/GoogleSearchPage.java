@@ -1,5 +1,7 @@
-package com.ui.seleniumdesign.srp;
+package com.ui.seleniumdesign.srp.pages;
 
+import com.ui.seleniumdesign.srp.components.SearchSuggestion;
+import com.ui.seleniumdesign.srp.components.SearchWidget;
 import org.openqa.selenium.WebDriver;
 
 public class GoogleSearchPage {
