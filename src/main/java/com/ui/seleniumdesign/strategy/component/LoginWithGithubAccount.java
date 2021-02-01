@@ -39,4 +39,9 @@ public class LoginWithGithubAccount implements SignUpOptions {
 
 
     }
+
+    @Override
+    public boolean isDisplayed() {
+        return false;
+    }
 }

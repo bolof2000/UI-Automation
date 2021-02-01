@@ -21,8 +21,8 @@ public class BaseTest {
      */
     protected static WebDriver driver;
 
-    public static void goToUrl(String s){
-        driver.get("https://www.google.com");
+    public static void goToUrl(){
+        driver.get("https://www.leetcode.com");
     }
 
     @BeforeTest

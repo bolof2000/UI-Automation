@@ -23,7 +23,7 @@ public class GoogleTest extends BaseTest {
 
     @Test(dataProvider = "getData")
     public void googleTestWorkFlow(String keyword,int index){
-        goToUrl("https://www.google.com");
+        goToUrl();
         Assert.assertTrue(googleSearchPage.getSearchWidget().isDisplayed());
         googleSearchPage.getSearchWidget().enterWordToSearch(keyword);
         googleSearchPage.getSearchSuggestion().clickSuggestionByIndex(index);

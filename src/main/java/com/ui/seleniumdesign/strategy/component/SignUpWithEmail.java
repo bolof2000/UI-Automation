@@ -5,11 +5,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.annotation.Nullable;
 
 public class SignUpWithEmail implements SignUpOptions {
 
+    private static WebDriverWait wait ;
     @FindBy(name= "username")
     private WebElement username;
 
@@ -25,6 +27,8 @@ public class SignUpWithEmail implements SignUpOptions {
 
     public SignUpWithEmail(final WebDriver driver){
         PageFactory.initElements(driver,this);
+        this.wait = new WebDriverWait(driver,40);
+
     }
 
     @Override
@@ -34,5 +38,8 @@ public class SignUpWithEmail implements SignUpOptions {
         this.passwordTwo.sendKeys(password2);
         this.email.sendKeys(email);
         this.signUpButton.click();
+    }
+    public boolean isDisplayed() {
+        return  wait.until((d) -> this.username.isDisplayed()) ;
     }
 }

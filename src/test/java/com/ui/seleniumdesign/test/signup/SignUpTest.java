@@ -8,6 +8,8 @@ import com.ui.seleniumdesign.test.BaseTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class SignUpTest extends BaseTest {
     private HomePage homePage;
     private SignUpPage signUpPage;
@@ -21,9 +23,10 @@ public class SignUpTest extends BaseTest {
 
     @Test
     public void signUpTestWithWithEmailAndPassword(){
-        goToUrl("www.leetcode.com");
-        this.homePage.getCreateAaccountComponent();
-        this.signUpPage.setSignUpOptions(new SignUpWithEmail(driver));
+        goToUrl();
+        this.homePage.getCreateAaccountComponent().clickCreateAccount();
+        this.signUpPage.getSignUpOptions().isDisplayed();
+       // this.signUpPage.setSignUpOptions(new SignUpWithEmail(driver));
         this.signUpPage.getSignUpOptions().signUpInformation("bolofbaba","Dammy2k100","Dammy2k100",
         "bolofbaba@gmail.com");
 
