@@ -22,7 +22,7 @@ public class BaseTest {
     protected static WebDriver driver;
 
     public static void goToUrl(){
-        driver.get("https://www.leetcode.com");
+        driver.get("https://www.demoblaze.com/index.html");
     }
 
     @BeforeTest
